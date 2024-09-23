@@ -39,7 +39,7 @@ function getList (animals) {
       />
       <p>
         <b>{animal.name}</b><br />
-          {' ' + animal.description + ' '}
+          {animal.description}
       </p>
     </li>
   );
