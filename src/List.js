@@ -1,21 +1,38 @@
-import { animals } from './data.js';
+import { useState } from 'react';
+import { initialAnimals } from './data.js';
 import { getImageUrl } from './utils.js';
 
-// function MyComponent() {
-//     return (
-//       <div>
-//         <p>Ksenia</p>
-//         <p>{new Date().toLocaleDateString()}</p>
-//       </div>
-//     );
-// }
-// export default MyComponent;
-
-
-
 export default function List() {
-  const listItems = animals.map(animal =>
-    <li key={animal.id}>
+  const [animals, setAnimals] = useState(
+    initialAnimals
+  );
+  return <>
+      <button onClick={() => {
+              setAnimals(initialAnimals.filter(a =>
+                a.type === "cute"
+              ));
+            }}>
+              All Cute Animals
+        </button>
+        <button onClick={() => {
+              setAnimals(initialAnimals.filter(a =>
+                a.type === "scary"
+              ));
+            }}>
+              All Scary Animals
+        </button>
+        <button onClick={() => {
+              setAnimals(initialAnimals);
+            }}>
+              Selectors Choice
+        </button>
+      <ul>{getList(animals)}</ul>
+    </>;
+}
+
+function getList (animals) {
+  return animals.map(animal =>
+    <li key={"animal-" + animal.id}>
       <img
         src={getImageUrl(animal)}
         alt={animal.name}
@@ -26,5 +43,4 @@ export default function List() {
       </p>
     </li>
   );
-  return <ul>{listItems}</ul>;
 }

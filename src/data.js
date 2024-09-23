@@ -1,4 +1,4 @@
-export const animals = [{
+export const initialAnimals = [{
     id: 0,
     name: 'White lion',
     description: "White lions have a rare recessive trait that causes their white skin coloration. Unlike albino animals that lack pigmentation, white lions’ rare gene produces lighter pigmentation. Whereas albinos have pink or red coloration to their eyes and noses, white lions have blue or gold eyes, black features on their noses, “eye-liner,” and dark patches behind their ears. Male white lions may have white, blonde, or pale hair in their manes and on the ends of their tails.",
