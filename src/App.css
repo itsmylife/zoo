@@ -37,7 +37,7 @@
   }
 }
 
-li {
+.animal-item {
   display: grid;
   align-items: center; 
   grid-template-columns: 1fr 1fr 1fr;
@@ -47,14 +47,14 @@ li {
   text-align: left;
  }
 
-img {
+.animal-picture {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 300px;
 }
 
-p {
+.animal-description {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -62,6 +62,6 @@ p {
   margin-inline-end: 0px;
 }
 
-button {
+.filter-button {
   margin: 20px;
 }
