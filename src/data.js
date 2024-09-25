@@ -28,5 +28,4 @@ export const initialAnimals = [{
     description: "The otter has a lithe and slender body with short legs, a strong neck, and a long flattened tail that helps propel the animal gracefully through water. Swimming ability is further enhanced in most species by four webbed feet. Two species are marine, and the others living predominantly in fresh water.",
     type: "cute",
     imageId: "neVk7fi"
-}
-]
+}]
